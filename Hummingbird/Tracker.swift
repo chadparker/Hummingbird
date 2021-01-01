@@ -179,6 +179,11 @@ class Tracker {
                 trackingInfo.size += Delta(dx: -delta.dx, dy: delta.dy)
         }
 
+        if trackingInfo.origin.x < 0 {
+            trackingInfo.size.width += trackingInfo.origin.x
+            trackingInfo.origin.x = 0
+        }
+
         guard (CACurrentMediaTime() - trackingInfo.time) > Tracker.resizeFilterInterval else { return }
 
         switch trackingInfo.corner {
