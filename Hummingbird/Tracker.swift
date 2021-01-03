@@ -145,12 +145,26 @@ class Tracker {
 
 
     private func move(delta: Delta) {
-        guard let window = trackingInfo.window else {
+        guard
+            let window = trackingInfo.window,
+            let windowSize = window.size,
+            let screenSize = NSScreen.main?.frame.size
+        else {
             log(.debug, "No window!")
             return
         }
 
         trackingInfo.origin += delta
+        
+        if trackingInfo.origin.x < 0 {
+            trackingInfo.origin.x = 0
+        }
+        if trackingInfo.origin.x + windowSize.width > screenSize.width {
+            trackingInfo.origin.x = screenSize.width - windowSize.width
+        }
+        if trackingInfo.origin.y + windowSize.height > screenSize.height {
+            trackingInfo.origin.y = screenSize.height - windowSize.height
+        }
 
         guard (CACurrentMediaTime() - trackingInfo.time) > Tracker.moveFilterInterval else { return }
 
@@ -177,6 +191,11 @@ class Tracker {
             case .bottomLeft:
                 trackingInfo.origin += Delta(dx: delta.dx, dy: 0)
                 trackingInfo.size += Delta(dx: -delta.dx, dy: delta.dy)
+        }
+
+        if trackingInfo.origin.x < 0 {
+            trackingInfo.size.width += trackingInfo.origin.x
+            trackingInfo.origin.x = 0
         }
 
         guard (CACurrentMediaTime() - trackingInfo.time) > Tracker.resizeFilterInterval else { return }
