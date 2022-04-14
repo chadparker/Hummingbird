@@ -19,7 +19,7 @@ Or use [Homebrew](https://brew.sh):
 
 ```
 brew tap finestructure/Hummingbird
-brew cask install Hummingbird
+brew install --cask Hummingbird
 ```
 
 Hummingbird has been tested on macOS 10.14 Mojave and 10.15 Catalina but it should run on earlier macOS versions as well (macOS 10.11 or higher).
@@ -47,6 +47,10 @@ Hummingbird has been tested on macOS 10.14 Mojave and 10.15 Catalina but it shou
 Hummingbird is open source but if you'd like to support the app or simply don't want to bother building it yourself, please head over to https://hbird.app to download the commercial version. It comes with a 14 day free trial and you can purchase a license through the website or from within the app.
 
 Every sale helps me to keep working on Hummingbird and if you find it useful, please spread the word!
+
+## Known Limitations
+
+Hummingbird is using the macOS Accessibility APIs in order to discover windows and update their position and size. Some apps seem to be creating windows that don't participate in this mechanism and therefore are invisible to Hummingbird. See [issue #5](https://github.com/finestructure/Hummingbird/issues/5) for more details in what apps might be affected.
 
 ## Contributing
 
