@@ -343,7 +343,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					6ED47B60183BF3E800859244 = {
-						DevelopmentTeam = Q9M64Q4ZZ7;
+						DevelopmentTeam = 8WK25CU37Q;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -559,7 +559,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9M64Q4ZZ7;
+				DEVELOPMENT_TEAM = 8WK25CU37Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hummingbird/Hummingbird-Prefix.pch";
 				INFOPLIST_FILE = "Hummingbird/Hummingbird-Info.plist";
@@ -660,7 +660,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9M64Q4ZZ7;
+				DEVELOPMENT_TEAM = 8WK25CU37Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hummingbird/Hummingbird-Prefix.pch";
 				INFOPLIST_FILE = "Hummingbird/Hummingbird-Info.plist";
@@ -866,7 +866,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9M64Q4ZZ7;
+				DEVELOPMENT_TEAM = 8WK25CU37Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hummingbird/Hummingbird-Prefix.pch";
 				INFOPLIST_FILE = "Hummingbird/Hummingbird-Info.plist";
@@ -891,7 +891,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9M64Q4ZZ7;
+				DEVELOPMENT_TEAM = 8WK25CU37Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hummingbird/Hummingbird-Prefix.pch";
 				INFOPLIST_FILE = "Hummingbird/Hummingbird-Info.plist";
