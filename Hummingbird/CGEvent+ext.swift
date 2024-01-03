@@ -6,6 +6,7 @@
 //  Copyright © 2019 finestructure. All rights reserved.
 //
 
+import CoreGraphics
 import Foundation
 
 
